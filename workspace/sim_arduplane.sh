@@ -182,13 +182,13 @@ while true; do
   shift 1
   ;;
     -- )
-	shift;
-	break
-	;;
+  shift;
+  break
+  ;;
     *)
-	echo "Internal error!" ;
-	exit 1
-	;;
+  echo "Internal error!" ;
+  exit 1
+  ;;
   esac
 done
 
