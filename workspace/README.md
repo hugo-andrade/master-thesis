@@ -6,6 +6,6 @@
 >Reference: [Ardupilot](http://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html) <br />
 >Required: <br />
 >\<workspace\> <br />
->______|- sim_arduplane.sh <br />
->______|- /ardupilot <br />
->______|- /jsbsim <br />
+>>>sim_arduplane.sh <br />
+>>>/[ardupilot](https://github.com/ArduPilot/ardupilot) <br />
+>>>/[jsbsim](https://github.com/tridge/jsbsim) <br />
