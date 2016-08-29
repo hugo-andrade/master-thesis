@@ -45,10 +45,10 @@ VERSION=0.0.5
 ## CHANGE VARs
 ########################
 
-ARDUPILOT_BASEDIR="<PATH TO>/ardupilot"
+ARDUPILOT_BASEDIR="<WORKSPACE FULL PATH>/ardupilot"
 LOCATION=-22.904997,-43.16309,5,179.6  # SBRJ as default location
-AIRCRAFT_NAME="<NAME>"
-MISSION_NAME="<MISSION>"
+AIRCRAFT_NAME="<AIRCRAFT NAME>"
+MISSION_NAME="<MISSION NAME>"
 
 ########################
 
@@ -117,9 +117,9 @@ eval set -- "$TEMP"
 while true; do
   case "$1" in
     -l )
-	LOCATION="$2" ;
-	shift 2
-	;;
+  LOCATION="$2" ;
+  shift 2
+  ;;
     -w )
   WIPE_EEPROM=1 ;
   shift 1
@@ -154,13 +154,13 @@ while true; do
   shift 1
   ;;
     --mpo1 )
-	MAVPROXY_ADDR_OUT1="127.0.0.1:14550" ;
-	shift 1
-	;;
+  MAVPROXY_ADDR_OUT1="127.0.0.1:14550" ;
+  shift 1
+  ;;
     --mpo2 )
-	MAVPROXY_ADDR_OUT2="127.0.0.1:14551" ;
-	shift 1
-	;;
+  MAVPROXY_ADDR_OUT2="127.0.0.1:14551" ;
+  shift 1
+  ;;
     -W )
   WIND=1 ;
   shift 1
@@ -170,13 +170,13 @@ while true; do
   shift 1
   ;;
     -v | --version )
-	printf "sim_arduplane version \"$VERSION\" \nHugo Andrade <hugo.slip@gmail.com>\n" >&2;
-	exit 1
-	;;
+  printf "sim_arduplane version \"$VERSION\" \nHugo Andrade <hugo.slip@gmail.com>\n" >&2;
+  exit 1
+  ;;
     -h | --help )
-	usage;
-	exit 1
-	;;
+  usage;
+  exit 1
+  ;;
     -c )
   MAVPROXY_CONSOLE=1 ;
   shift 1
